@@ -37,7 +37,7 @@ export default function App()  {
       // Check if the weight and height fields contain commmas or hyphens
       if(weight.includes(',') || weight.includes('-') || height.includes(',') || height.includes('-')){
         // If commmas or hyphens are found, display an error message
-        Alert.alert('Error', 'Por favor, use o ponto (.) como separador decimal para peso e altura.');
+        Alert.alert('Error', 'Please, use the period (.) as the decimal separator for weight and height.');
         return;
       }
     }
@@ -54,7 +54,7 @@ export default function App()  {
         // Custom configurations for BMI ranges
         // Each 'if' block below contains personalized settings for a specific BMI range.
         // These settings include message, color, and alignment adjustments.
-        setMessage('Baixo peso - Grau III')
+        setMessage('Low weight - Grade III')
         resultStyle = ({
           color:"rgb(249, 0, 0)",
           alignSelf:'flex-start'
@@ -65,7 +65,7 @@ export default function App()  {
       }
 
       if(IMCFine >= 16 && IMCFine <= 16.99){
-        setMessage('Baixo peso - Grau II')
+        setMessage('Low weight - Grade II')
         resultStyle = ({
           color:"rgb(255, 161, 0)"
         });
@@ -75,7 +75,7 @@ export default function App()  {
       }
 
       if(IMCFine >=17 && IMCFine <=18.49){
-        setMessage('Baixo peso - Grau I')
+        setMessage('Low weight - Grade I')
         resultStyle = ({
           color:"rgb(246, 255, 0)"
         });
@@ -85,7 +85,7 @@ export default function App()  {
       }
 
       if (IMCFine >= 18.5 && IMCFine <= 24.99) {
-        setMessage('Saudável')
+        setMessage('Healthy')
         resultStyle = {
           color: 'rgb(63, 252, 0)' 
         };
@@ -95,7 +95,7 @@ export default function App()  {
       }
 
       if(IMCFine >= 25 && IMCFine <= 29.99){
-        setMessage('Sobrepeso')
+        setMessage('Overweight')
         resultStyle = ({
           color:"rgb(246, 255, 0)"
         }); 
@@ -105,14 +105,14 @@ export default function App()  {
       }
 
       if(IMCFine >= 30 && IMCFine <= 34.99){
-        setMessage('Obesidade - Grau I (Leve)')
+        setMessage('Obesity - Grade I (Mild)')
         resultStyle = ({
           color:"rgb(246, 255, 0)"
         });
       }
 
       if(IMCFine >= 35 && IMCFine <= 39.99){
-        setMessage('Obesidade - Grau II (Moderada)')
+        setMessage('Obesity - Grade II (Moderate)')
         resultStyle = ({
           color:"rgb(255, 161, 0)"
         });
@@ -122,7 +122,7 @@ export default function App()  {
       }
 
       if(IMCFine >= 40){
-        setMessage('Obesidade - Grau III (Mórbida)')
+        setMessage('Obesity - Grade III (Morbid)')
         resultStyle = ({
           color:"rgb(249, 0, 0)"
         });
@@ -177,11 +177,11 @@ export default function App()  {
 
               {/* Title of the app */}
               <View style={styles.Container_Title_App}>
-                <Text style={styles.Text_Title_App}>Calculadora - IMC</Text>
+                <Text style={styles.Text_Title_App}>CALCULATE - BMI</Text>
               </View>
 
               {/* Input for height in meters */}
-              <Text style={styles.height_Label}>Altura em Metros</Text>
+              <Text style={styles.height_Label}>Height in Meters</Text>
               <View style={styles.Containers_Inputs}>  
                 <TextInput
                   style={styles.Inputs}
@@ -193,7 +193,7 @@ export default function App()  {
               </View>
 
               {/* Input for weight in Kilograms */}
-              <Text style={styles.weight_Label}>Peso em Kg</Text>
+              <Text style={styles.weight_Label}>Weight in Kg</Text>
               <View style={styles.Containers_Inputs}>
                 <TextInput
                   style={styles.Inputs}
