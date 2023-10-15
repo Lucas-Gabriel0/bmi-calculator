@@ -268,8 +268,10 @@ const styles = StyleSheet.create({
   height_Label:{   
     color:'#ffff',
     fontSize:18,
-    paddingRight:'56%',
-    paddingTop:'4%',
+   
+    marginTop:'4%',
+    textAlign:'left',
+    width:'95%'
   },
 
   Containers_Inputs: {
@@ -290,7 +292,6 @@ const styles = StyleSheet.create({
     color:'black',
     fontSize:20,
     position:'absolute',
-   
     marginLeft:'90%',
   },
 
@@ -305,8 +306,8 @@ const styles = StyleSheet.create({
   weight_Label:{
     color:'#ffff',
     fontSize:18,
-    paddingRight:'69%',
-    paddingTop:'4%',
+    width:"95%",
+    marginTop:'4%',
 
   },
 
@@ -319,13 +320,11 @@ const styles = StyleSheet.create({
   bmi_Result:{
     flex:1,
     fontSize:30,
-   
   },
 
   bmi_Display:{
     flex:1,
     marginLeft:'2%',
-    
   },
 
   bmi_Message_Section:{
@@ -337,7 +336,6 @@ const styles = StyleSheet.create({
     fontSize:18,
     color:'#ffff',
     marginTop:'3%',
-    
   },
 
   calculate_Button:{
@@ -347,8 +345,7 @@ const styles = StyleSheet.create({
     height:'12%',
     borderRadius:7,
     justifyContent:'center',
-    alignItems:'center',
-    
+    alignItems:'center',   
   },
   
   calculate_Button_Text:{
