@@ -11,7 +11,15 @@ This is a simple application for calculating the Body Mass Index (BMI) based on 
 
 # Screenshots
 
-https://github.com/Lucas-Gabriel0/bmi-calculator/assets/116285526/69646006-cc63-4c0b-a5b4-7583e2e166b3
+
+
+https://github.com/Lucas-Gabriel0/bmi-calculator/assets/116285526/8c07f915-911f-47d6-9071-f0d7ba2251c7
+
+
+
+
+
+
 
 # How to Use
 
